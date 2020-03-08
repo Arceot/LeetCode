@@ -1,30 +1,37 @@
+//https://leetcode-cn.com/problems/coin-change/solution/322-by-ikaruga/
+//抄的别人的题解，还需要自己体会体会
+//贪心+dfs+剪枝
 #include <vector>
 #include <algorithm>
 using namespace std;
 class Solution {
 public:
 	int coinChange(vector<int>& coins, int amount) {
-		vector<int> vec;
-		for (int i = 0; i < coins.size();i++)
+		if (amount==0)
 		{
-			vec.push_back(coins[i]);
+			return 0;
 		}
-		sort(vec.begin(), vec.end());
-		int cnt = 0;
-		for (int i = vec.size() - 1; i >= 0; i--)
+		sort(coins.rbegin(),coins.rend());
+		int ans = INT_MAX;
+		coinChange(coins, amount, 0, 0, ans);
+		return ans == INT_MAX ? -1 : ans;
+	}
+	void coinChange(vector<int>& coins,int amount,
+		int c_index,int count,int& ans)
+	{
+		if (amount==0)
 		{
-			while (amount >= vec[i])
-			{
-				amount -= vec[i];
-				cnt++;
-				cout << "cnt=" << cnt << " amount=" << amount 
-					<< " vec[" << i << "]=" << vec[i] << endl;
-			}
+			ans = min(ans,count);
 		}
-		if (amount!=0)
+		if (c_index==coins.size())
 		{
-			return -1;
+			return;
 		}
-		return cnt;
+		for (int k = amount / coins[c_index]; 
+			k >= 0 && k + count < ans;k--)//剪枝
+		{
+			coinChange(coins, amount - k*coins[c_index],
+				c_index + 1, count + k, ans);
+		}
 	}
 };
