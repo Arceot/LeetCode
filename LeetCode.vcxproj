@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFDF9412-4704-4C30-9279-3E8EBD7B79CF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LeetCode</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="源.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="1103_distributeCandies.h" />
+    <ClInclude Include="127_ladderLength.h" />
+    <ClInclude Include="200_numIslands.h" />
+    <ClInclude Include="206_reverseList.h" />
+    <ClInclude Include="2_addTwoNumbers.h" />
+    <ClInclude Include="322_coinChange.h" />
+    <ClInclude Include="438_findAnagrams.h" />
+    <ClInclude Include="5352_generateTheString.h" />
+    <ClInclude Include="5353_numTimesAllBlue.h" />
+    <ClInclude Include="57_II_findContinuousSequence.h" />
+    <ClInclude Include="59_II_MaxQueue.h" />
+    <ClInclude Include="76_7_minWindow.h" />
+    <ClInclude Include="7_187_findRepeatedDnaSequences.h" />
+    <ClInclude Include="7_290_wordPattern.h" />
+    <ClInclude Include="7_3_lengthOfLongestSubstring.h" />
+    <ClInclude Include="7_409_longestPalindrome.h" />
+    <ClInclude Include="7_49_groupAnagrams.h" />
+    <ClInclude Include="994_orangesRotting.h" />
+    <ClInclude Include="canFinish.h" />
+    <ClInclude Include="canJump.h" />
+    <ClInclude Include="Codec.h" />
+    <ClInclude Include="combinationSum2.h" />
+    <ClInclude Include="copyRandomList.h" />
+    <ClInclude Include="countSmaller.h" />
+    <ClInclude Include="detectCycle.h" />
+    <ClInclude Include="findContentChildren.h" />
+    <ClInclude Include="FindKthLagest.h" />
+    <ClInclude Include="findMinArrowShots.h" />
+    <ClInclude Include="flatten.h" />
+    <ClInclude Include="generateParenthesis.h" />
+    <ClInclude Include="getIntersectionNode.h" />
+    <ClInclude Include="hasCycle.h" />
+    <ClInclude Include="IsStackPoped.h" />
+    <ClInclude Include="isSubPath.h" />
+    <ClInclude Include="jump.h" />
+    <ClInclude Include="lowestCommonAncestor.h" />
+    <ClInclude Include="MedianFinder.h" />
+    <ClInclude Include="merge.h" />
+    <ClInclude Include="mergeKLists.h" />
+    <ClInclude Include="mergeTwoLists.h" />
+    <ClInclude Include="minRefuelStops.h" />
+    <ClInclude Include="MinStack.h" />
+    <ClInclude Include="MyQueue.h" />
+    <ClInclude Include="MyStack.h" />
+    <ClInclude Include="partition.h" />
+    <ClInclude Include="pathSum.h" />
+    <ClInclude Include="rankTeams.h" />
+    <ClInclude Include="removeKdigits.h" />
+    <ClInclude Include="reverseBetween.h" />
+    <ClInclude Include="ReverseList.h" />
+    <ClInclude Include="rightSideView.h" />
+    <ClInclude Include="search.h" />
+    <ClInclude Include="searchInsert.h" />
+    <ClInclude Include="searchRange.h" />
+    <ClInclude Include="SimpleCalculate.h" />
+    <ClInclude Include="smallerNumbersThanCurrent.h" />
+    <ClInclude Include="solveNQueens.h" />
+    <ClInclude Include="subsets.h" />
+    <ClInclude Include="subsetsWithDup.h" />
+    <ClInclude Include="wiggleMaxLength.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
