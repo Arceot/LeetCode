@@ -200,6 +200,12 @@
     <ClInclude Include="322_coinChange.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="121_maxProfit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="543_diameterOfBinaryTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

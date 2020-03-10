@@ -86,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1103_distributeCandies.h" />
+    <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
     <ClInclude Include="200_numIslands.h" />
     <ClInclude Include="206_reverseList.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="438_findAnagrams.h" />
     <ClInclude Include="5352_generateTheString.h" />
     <ClInclude Include="5353_numTimesAllBlue.h" />
+    <ClInclude Include="543_diameterOfBinaryTree.h" />
     <ClInclude Include="57_II_findContinuousSequence.h" />
     <ClInclude Include="59_II_MaxQueue.h" />
     <ClInclude Include="76_7_minWindow.h" />
