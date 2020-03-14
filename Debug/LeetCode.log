@@ -1,11 +1,8 @@
-﻿生成启动时间为 2020/3/8 星期日 16:25:13。
+﻿生成启动时间为 2020/3/12 星期四 18:06:20。
      1>项目“C:\Users\Arc\Desktop\LeetCode\LeetCode\LeetCode.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\AZ\vs111301\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /FR"Debug\\" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
          源.cpp
-     1>c:\users\arc\desktop\leetcode\leetcode\322_coinchange.h(8): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\arc\desktop\leetcode\leetcode\源.cpp(51): warning C4018: “<”: 有符号/无符号不匹配
-     1>c:\users\arc\desktop\leetcode\leetcode\源.cpp(119): warning C4018: “<”: 有符号/无符号不匹配
        Link:
          D:\AZ\vs111301\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Arc\Desktop\LeetCode\Debug\LeetCode.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Arc\Desktop\LeetCode\Debug\LeetCode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Arc\Desktop\LeetCode\Debug\LeetCode.lib" /MACHINE:X86 "Debug\源.obj"
          LeetCode.vcxproj -> C:\Users\Arc\Desktop\LeetCode\Debug\LeetCode.exe
@@ -15,4 +12,4 @@
 
 生成成功。
 
-已用时间 00:00:01.19
+已用时间 00:00:01.37

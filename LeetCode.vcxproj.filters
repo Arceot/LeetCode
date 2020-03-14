@@ -206,6 +206,30 @@
     <ClInclude Include="543_diameterOfBinaryTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="05_replaceSpace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="473_ makesquare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1013_canThreePartsEqualSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1071_gcdOfStrings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="407_trapRainWater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="169_majorityElement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="70_climbStairs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="198_rob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

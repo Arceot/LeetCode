@@ -5,191 +5,89 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "322_coinChange.h"
+#include "407_trapRainWater.h"
 using namespace std;
-//struct ListNode
+//struct listnode
 //{
 //	int val;
-//	ListNode* next;
-//	ListNode(int x) :val(x), next(NULL){}
+//	listnode* next;
+//	listnode(int x) :val(x), next(NULL){}
 //};
-//struct TreeNode
+//struct treenode
 //{
 //	int val;
-//	TreeNode* left;
-//	TreeNode* right;
-//	TreeNode(int x) :val(x), left(NULL), right(NULL) {};
+//	treenode* left;
+//	treenode* right;
+//	treenode(int x) :val(x), left(NULL), right(NULL) {};
+//};
+//struct GraphNode
+//{
+//	int lable;
+//	vector<GraphNode*> neighbors;
+//	GraphNode(int x) :lable(x){};
 //};
 
-struct GraphNode
-{
-	int lable;
-	vector<GraphNode*> neighbors;
-	GraphNode(int x) :lable(x){};
-};
-
-//void print_tree_node(TreeNode* treenode, int layer)
+//struct Qitem
 //{
-//	if (treenode == NULL)
-//	{
-//		return;
-//	}
-//	for (int i = 0; i < layer; i++)
-//	{
-//		cout << "----";
-//	}
-//	cout << "[" << treenode->val << "]" << endl;
-//	print_tree_node(treenode->left, layer + 1);
-//	print_tree_node(treenode->right, layer + 1);
-//}
+//	int x;
+//	int y;
+//	int h;
+//	Qitem(int _x, int _y, int _h) :x(_x), y(_y), h(_h){};
+//};
 
-//深度优先搜索
-void DFS_graph(GraphNode* node, int* visit)
-{
-	visit[node->lable] = 1;
-	cout << node->lable << " ";
-	for (int i = 0; i < node->neighbors.size(); i++)
-	{
-		if (visit[node->neighbors[i]->lable] == 0)
-		{
-			DFS_graph(node->neighbors[i], visit);
-		}
-	}
-}
-
-////广度优先搜索 自己想的
-//void BFS_graph(GraphNode* node, int* visit)
+//struct cmp
 //{
-//	if (visit[node->lable] == 0)
+//	bool operator()(const Qitem& a, const Qitem& b)
 //	{
-//		cout << node->lable << " ";
-//		visit[node->lable] = 1;
+//		return a.h > b.h;
 //	}
-//	for (int i = 0; i < node->neighbors.size(); i++)//先把下一层的都遍历完
-//	{
-//		if (visit[node->neighbors[i]->lable] == 0)
-//		{
-//			cout << node->neighbors[i]->lable << " ";
-//			//visit[node->neighbors[i]->lable] = 1;//这里先不置1，为什么？
-//		}
-//	}
-//	for (int i = 0; i < node->neighbors.size(); i++)//再继续向下一层遍历
-//	{
-//		if (visit[node->neighbors[i]->lable] == 0)
-//		{
-//			visit[node->neighbors[i]->lable] = 1;//到这里再置1，为什么？
-//			BFS_graph(node->neighbors[i], visit);
-//		}
-//	}
-//}
-//
-////广度优先搜索 自己想的 修改待试验
-//void BFS_graph(GraphNode* node, int* visit)
-//{
-//	//if (visit[node->lable] == 0)
-//	//{
-//	//	cout << node->lable << " ";
-//	//	visit[node->lable] = 1;
-//	//}
-//	for (int i = 0; i < node->neighbors.size(); i++)//先把下一层的都遍历完
-//	{
-//		if (visit[node->neighbors[i]->lable] == 0)
-//		{
-//			cout << node->neighbors[i]->lable << " ";
-//			visit[node->neighbors[i]->lable] = 1;//这里先不置1，为什么？
-//		}
-//	}
-//	for (int i = 0; i < node->neighbors.size(); i++)
-//	{
-//		BFS_graph(node->neighbors[i], visit);
-//	}
-//}
+//};
 
-
-//视频里的
-void BFS_graph(GraphNode* node, int* visit)
-{
-	queue<GraphNode*> Q;
-	Q.push(node);
-	visit[Q.front()->lable] = 1;
-	while (!Q.empty())
-	{
-		cout << Q.front()->lable << " ";
-		//visit[Q.front()->lable] = 1;//这里置1太晚了，2在3前面，3还没置1时，2又访问了一遍3；这里输出的顺序是0 4 2 3
-		for (int i = 0; i < Q.front()->neighbors.size(); i++)
-		{
-			if (visit[Q.front()->neighbors[i]->lable] == 0)
-			{
-				Q.push(Q.front()->neighbors[i]);
-				visit[Q.front()->neighbors[i]->lable] = 1;//push进去之后置1
-			}
-		}
-		Q.pop();
-	}
-
-}
-
-//void BST_insert(TreeNode* root,TreeNode* insert_node)
-//{
-//	if (insert_node->val<root->val)
-//	{
-//		if (root->left==NULL)
-//		{
-//			root->left = insert_node;
-//		}
-//		else
-//		{
-//			BST_insert(root->left, insert_node);
-//		}
-//	}
-//	else
-//	{
-//		if (root->right==NULL)
-//		{
-//			root->right = insert_node;
-//		}
-//		else
-//		{
-//			BST_insert(root->right, insert_node);
-//		}
-//	}
-//}
-
-int hash_func(int key, int table_len)
-{
-	return key%table_len;
-}
-//void insert(ListNode* hash_table[],ListNode* node,int table_len)
-//{
-//	int hash_key = hash_func(node->val, table_len);
-//	node->next = hash_table[hash_key];//使用头插法插入节点
-//	hash_table[hash_key] = node;
-//}
-//bool search(ListNode* hash_table[],int val,int table_len)
-//{
-//	int val_key = val%table_len;
-//	ListNode* head=hash_table[val_key];
-//	while (head)
-//	{
-//		if (head->val==val)
-//		{
-//			return true;
-//		}
-//		head = head->next;
-//	}
-//	return false;
-//}
 
 int main()
 {
 	Solution solve;
-	vector<int> vec;
-	vec.push_back(186);
-	vec.push_back(419);
-	vec.push_back(83);
-	vec.push_back(408);
+	int a[3][6] = {
+		1, 4, 3, 1, 3, 2,
+		3, 2, 1, 3, 2, 4,
+		2, 3, 3, 2, 3, 1 };
+	vector<vector<int>> heightmap;
+	cout << heightmap[0].size();
 
-	cout<<endl<<solve.coinChange(vec,6249);
+	for (int i = 0; i < 3;i++)
+	{
+		heightmap.push_back(vector<int>());
+		for (int j = 0; j < 6;j++)
+		{
+			heightmap[i].push_back(a[i][j]);
+		}
+	}
+	cout << solve.trapRainWater(heightmap);
+	//cout << endl << solve.gcdOfStrings(str1,str2);
+	//priority_queue<Qitem, vector<Qitem>, cmp> Q;
+	//Q.push(Qitem(1, 2, 1));
+	//Q.push(Qitem(2, 5, 0));
+	//Q.push(Qitem(8, 7, 4));
+	//Q.push(Qitem(6, 5, 3));
+	//while (!Q.empty())
+	//{
+	//	cout << "x=" << Q.top().x << " y=" << Q.top().y
+	//		<< " h=" << Q.top().h << endl;
+	//	Q.pop();
+	//}
+
+	//vector<int> vec;
+	//vec.push_back(0);
+	//vec.push_back(2);
+	//vec.push_back(1);
+	//vec.push_back(-6);
+	//vec.push_back(6);
+	//vec.push_back(7);
+	//vec.push_back(9);
+	//vec.push_back(-1);
+	//vec.push_back(2);
+	//vec.push_back(0);
+	//vec.push_back(1);
 
 	//string begin_word = "a";
 	//string end_word = "c";
@@ -492,3 +390,154 @@ int main()
 	system("pause");
 	return 0;
 }
+//void print_tree_node(TreeNode* treenode, int layer)
+//{
+//	if (treenode == NULL)
+//	{
+//		return;
+//	}
+//	for (int i = 0; i < layer; i++)
+//	{
+//		cout << "----";
+//	}
+//	cout << "[" << treenode->val << "]" << endl;
+//	print_tree_node(treenode->left, layer + 1);
+//	print_tree_node(treenode->right, layer + 1);
+//}
+
+////深度优先搜索
+//void DFS_graph(GraphNode* node, int* visit)
+//{
+//	visit[node->lable] = 1;
+//	cout << node->lable << " ";
+//	for (int i = 0; i < node->neighbors.size(); i++)
+//	{
+//		if (visit[node->neighbors[i]->lable] == 0)
+//		{
+//			DFS_graph(node->neighbors[i], visit);
+//		}
+//	}
+//}
+//
+////广度优先搜索 自己想的
+//void BFS_graph(GraphNode* node, int* visit)
+//{
+//	if (visit[node->lable] == 0)
+//	{
+//		cout << node->lable << " ";
+//		visit[node->lable] = 1;
+//	}
+//	for (int i = 0; i < node->neighbors.size(); i++)//先把下一层的都遍历完
+//	{
+//		if (visit[node->neighbors[i]->lable] == 0)
+//		{
+//			cout << node->neighbors[i]->lable << " ";
+//			//visit[node->neighbors[i]->lable] = 1;//这里先不置1，为什么？
+//		}
+//	}
+//	for (int i = 0; i < node->neighbors.size(); i++)//再继续向下一层遍历
+//	{
+//		if (visit[node->neighbors[i]->lable] == 0)
+//		{
+//			visit[node->neighbors[i]->lable] = 1;//到这里再置1，为什么？
+//			BFS_graph(node->neighbors[i], visit);
+//		}
+//	}
+//}
+//
+////广度优先搜索 自己想的 修改待试验
+//void BFS_graph(GraphNode* node, int* visit)
+//{
+//	//if (visit[node->lable] == 0)
+//	//{
+//	//	cout << node->lable << " ";
+//	//	visit[node->lable] = 1;
+//	//}
+//	for (int i = 0; i < node->neighbors.size(); i++)//先把下一层的都遍历完
+//	{
+//		if (visit[node->neighbors[i]->lable] == 0)
+//		{
+//			cout << node->neighbors[i]->lable << " ";
+//			visit[node->neighbors[i]->lable] = 1;//这里先不置1，为什么？
+//		}
+//	}
+//	for (int i = 0; i < node->neighbors.size(); i++)
+//	{
+//		BFS_graph(node->neighbors[i], visit);
+//	}
+//}
+//
+//
+////视频里的
+//void BFS_graph(GraphNode* node, int* visit)
+//{
+//	queue<GraphNode*> Q;
+//	Q.push(node);
+//	visit[Q.front()->lable] = 1;
+//	while (!Q.empty())
+//	{
+//		cout << Q.front()->lable << " ";
+//		//visit[Q.front()->lable] = 1;//这里置1太晚了，2在3前面，3还没置1时，2又访问了一遍3；这里输出的顺序是0 4 2 3
+//		for (int i = 0; i < Q.front()->neighbors.size(); i++)
+//		{
+//			if (visit[Q.front()->neighbors[i]->lable] == 0)
+//			{
+//				Q.push(Q.front()->neighbors[i]);
+//				visit[Q.front()->neighbors[i]->lable] = 1;//push进去之后置1
+//			}
+//		}
+//		Q.pop();
+//	}
+//
+//}
+//
+//void BST_insert(TreeNode* root,TreeNode* insert_node)
+//{
+//	if (insert_node->val<root->val)
+//	{
+//		if (root->left==NULL)
+//		{
+//			root->left = insert_node;
+//		}
+//		else
+//		{
+//			BST_insert(root->left, insert_node);
+//		}
+//	}
+//	else
+//	{
+//		if (root->right==NULL)
+//		{
+//			root->right = insert_node;
+//		}
+//		else
+//		{
+//			BST_insert(root->right, insert_node);
+//		}
+//	}
+//}
+//
+//int hash_func(int key, int table_len)
+//{
+//	return key%table_len;
+//}
+//void insert(ListNode* hash_table[],ListNode* node,int table_len)
+//{
+//	int hash_key = hash_func(node->val, table_len);
+//	node->next = hash_table[hash_key];//使用头插法插入节点
+//	hash_table[hash_key] = node;
+//}
+//bool search(ListNode* hash_table[],int val,int table_len)
+//{
+//	int val_key = val%table_len;
+//	ListNode* head=hash_table[val_key];
+//	while (head)
+//	{
+//		if (head->val==val)
+//		{
+//			return true;
+//		}
+//		head = head->next;
+//	}
+//	return false;
+//}

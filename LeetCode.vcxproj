@@ -85,19 +85,27 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="05_replaceSpace.h" />
+    <ClInclude Include="1013_canThreePartsEqualSum.h" />
+    <ClInclude Include="1071_gcdOfStrings.h" />
     <ClInclude Include="1103_distributeCandies.h" />
     <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
+    <ClInclude Include="169_majorityElement.h" />
+    <ClInclude Include="198_rob.h" />
     <ClInclude Include="200_numIslands.h" />
     <ClInclude Include="206_reverseList.h" />
     <ClInclude Include="2_addTwoNumbers.h" />
     <ClInclude Include="322_coinChange.h" />
+    <ClInclude Include="407_trapRainWater.h" />
     <ClInclude Include="438_findAnagrams.h" />
+    <ClInclude Include="473_ makesquare.h" />
     <ClInclude Include="5352_generateTheString.h" />
     <ClInclude Include="5353_numTimesAllBlue.h" />
     <ClInclude Include="543_diameterOfBinaryTree.h" />
     <ClInclude Include="57_II_findContinuousSequence.h" />
     <ClInclude Include="59_II_MaxQueue.h" />
+    <ClInclude Include="70_climbStairs.h" />
     <ClInclude Include="76_7_minWindow.h" />
     <ClInclude Include="7_187_findRepeatedDnaSequences.h" />
     <ClInclude Include="7_290_wordPattern.h" />
