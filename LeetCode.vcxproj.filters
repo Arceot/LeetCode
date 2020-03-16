@@ -230,6 +230,24 @@
     <ClInclude Include="198_rob.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="53_maxSubArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="300_lengthOfLIS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5356_luckyNumbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5357_CustomStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5179_balanceBST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="695_maxAreaOfIsland.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

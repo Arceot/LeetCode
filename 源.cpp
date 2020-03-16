@@ -5,8 +5,9 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "407_trapRainWater.h"
+#include "695_maxAreaOfIsland.h"
 using namespace std;
+
 //struct listnode
 //{
 //	int val;
@@ -47,22 +48,21 @@ using namespace std;
 int main()
 {
 	Solution solve;
-	int a[3][6] = {
-		1, 4, 3, 1, 3, 2,
-		3, 2, 1, 3, 2, 4,
-		2, 3, 3, 2, 3, 1 };
-	vector<vector<int>> heightmap;
-	cout << heightmap[0].size();
-
-	for (int i = 0; i < 3;i++)
+	int a[4][5] = {
+		1, 1, 0, 0, 0,
+		1, 1, 0, 0, 0,
+		0, 0, 0, 1, 1,
+		0, 0, 0, 1, 1 };
+	vector<vector<int>> imap;
+	for (int i = 0; i < 4;i++)
 	{
-		heightmap.push_back(vector<int>());
-		for (int j = 0; j < 6;j++)
+		imap.push_back(vector<int>());
+		for (int j = 0; j < 5;j++)
 		{
-			heightmap[i].push_back(a[i][j]);
+			imap[i].push_back(a[i][j]);
 		}
 	}
-	cout << solve.trapRainWater(heightmap);
+	cout << solve.maxAreaOfIsland(imap);
 	//cout << endl << solve.gcdOfStrings(str1,str2);
 	//priority_queue<Qitem, vector<Qitem>, cmp> Q;
 	//Q.push(Qitem(1, 2, 1));
