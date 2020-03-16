@@ -85,10 +85,12 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="01.06_compressString.h" />
     <ClInclude Include="05_replaceSpace.h" />
     <ClInclude Include="1013_canThreePartsEqualSum.h" />
     <ClInclude Include="1071_gcdOfStrings.h" />
     <ClInclude Include="1103_distributeCandies.h" />
+    <ClInclude Include="120_minimumTotal.h" />
     <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
     <ClInclude Include="169_majorityElement.h" />

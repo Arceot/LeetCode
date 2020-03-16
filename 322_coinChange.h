@@ -35,3 +35,26 @@ public:
 		}
 	}
 };
+
+//dp
+class Solution {
+public:
+	int coinChange(vector<int>& coins, int amount) {
+		vector<int> dp(amount+1,-1);//将所有金额最优解初始化为-1，表示不可达到
+		dp[0] = 0;//金额0最优解为0
+		for (int i = 1; i <= amount;i++)//递推
+		{
+			for (int j = 0; j < coins.size();j++)//循环各个面值找到dp[i]最优解
+			{
+				if (coins[j]<=i&&dp[i-coins[j]]!=-1)//递推条件
+				{
+					if (dp[i]==-1||dp[i]>dp[i-coins[j]]+1)
+					{
+						dp[i] = dp[i - coins[j]] + 1;//递推公式
+					}
+				}
+			}
+		}
+		return dp[amount];
+	}
+};

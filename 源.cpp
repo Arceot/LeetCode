@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "695_maxAreaOfIsland.h"
+#include "120_minimumTotal.h"
 using namespace std;
 
 //struct listnode
@@ -48,21 +48,19 @@ using namespace std;
 int main()
 {
 	Solution solve;
-	int a[4][5] = {
-		1, 1, 0, 0, 0,
-		1, 1, 0, 0, 0,
-		0, 0, 0, 1, 1,
-		0, 0, 0, 1, 1 };
+	//vector<int> vec1 = { 2 };
+	//vector<int> vec2 = { 3,4 };
+	//vector<int> vec3 = { 6,5,7 };
+	//vector<int> vec4 = { 4,1,8,3 };
+	vector<int> vec1 = { -1 };
+	vector<int> vec2 = { 3, 2 };
+	vector<int> vec3 = { -3, 1, -1 };
 	vector<vector<int>> imap;
-	for (int i = 0; i < 4;i++)
-	{
-		imap.push_back(vector<int>());
-		for (int j = 0; j < 5;j++)
-		{
-			imap[i].push_back(a[i][j]);
-		}
-	}
-	cout << solve.maxAreaOfIsland(imap);
+	imap.push_back(vec1);
+	imap.push_back(vec2);
+	imap.push_back(vec3);
+	//imap.push_back(vec4);
+	cout << solve.minimumTotal(imap);
 	//cout << endl << solve.gcdOfStrings(str1,str2);
 	//priority_queue<Qitem, vector<Qitem>, cmp> Q;
 	//Q.push(Qitem(1, 2, 1));

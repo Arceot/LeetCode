@@ -248,6 +248,12 @@
     <ClInclude Include="695_maxAreaOfIsland.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="01.06_compressString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="120_minimumTotal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
