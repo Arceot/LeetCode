@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "120_minimumTotal.h"
+#include "64_minPathSum.h"
 using namespace std;
 
 //struct listnode
@@ -52,15 +52,15 @@ int main()
 	//vector<int> vec2 = { 3,4 };
 	//vector<int> vec3 = { 6,5,7 };
 	//vector<int> vec4 = { 4,1,8,3 };
-	vector<int> vec1 = { -1 };
-	vector<int> vec2 = { 3, 2 };
-	vector<int> vec3 = { -3, 1, -1 };
+	vector<int> vec1 = { 1,3,1 };
+	vector<int> vec2 = { 1,5,1};
+	vector<int> vec3 = { 4,2,1};
 	vector<vector<int>> imap;
 	imap.push_back(vec1);
 	imap.push_back(vec2);
 	imap.push_back(vec3);
 	//imap.push_back(vec4);
-	cout << solve.minimumTotal(imap);
+	cout << solve.minPathSum(imap);
 	//cout << endl << solve.gcdOfStrings(str1,str2);
 	//priority_queue<Qitem, vector<Qitem>, cmp> Q;
 	//Q.push(Qitem(1, 2, 1));

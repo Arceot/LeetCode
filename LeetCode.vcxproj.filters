@@ -254,6 +254,21 @@
     <ClInclude Include="120_minimumTotal.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="1160_countCharacters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="64_minPathSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="treeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="174_calculateMinimumHP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="836_isRectangleOverlap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

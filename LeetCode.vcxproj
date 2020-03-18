@@ -90,10 +90,12 @@
     <ClInclude Include="1013_canThreePartsEqualSum.h" />
     <ClInclude Include="1071_gcdOfStrings.h" />
     <ClInclude Include="1103_distributeCandies.h" />
+    <ClInclude Include="1160_countCharacters.h" />
     <ClInclude Include="120_minimumTotal.h" />
     <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
     <ClInclude Include="169_majorityElement.h" />
+    <ClInclude Include="174_calculateMinimumHP.h" />
     <ClInclude Include="198_rob.h" />
     <ClInclude Include="200_numIslands.h" />
     <ClInclude Include="206_reverseList.h" />
@@ -112,6 +114,7 @@
     <ClInclude Include="543_diameterOfBinaryTree.h" />
     <ClInclude Include="57_II_findContinuousSequence.h" />
     <ClInclude Include="59_II_MaxQueue.h" />
+    <ClInclude Include="64_minPathSum.h" />
     <ClInclude Include="695_maxAreaOfIsland.h" />
     <ClInclude Include="70_climbStairs.h" />
     <ClInclude Include="76_7_minWindow.h" />
@@ -120,6 +123,7 @@
     <ClInclude Include="7_3_lengthOfLongestSubstring.h" />
     <ClInclude Include="7_409_longestPalindrome.h" />
     <ClInclude Include="7_49_groupAnagrams.h" />
+    <ClInclude Include="836_isRectangleOverlap.h" />
     <ClInclude Include="994_orangesRotting.h" />
     <ClInclude Include="canFinish.h" />
     <ClInclude Include="canJump.h" />
@@ -162,6 +166,7 @@
     <ClInclude Include="solveNQueens.h" />
     <ClInclude Include="subsets.h" />
     <ClInclude Include="subsetsWithDup.h" />
+    <ClInclude Include="treeNode.h" />
     <ClInclude Include="wiggleMaxLength.h" />
   </ItemGroup>
   <ItemGroup>
