@@ -95,35 +95,40 @@
     <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
     <ClInclude Include="169_majorityElement.h" />
-    <ClInclude Include="174_calculateMinimumHP.h" />
     <ClInclude Include="198_rob.h" />
     <ClInclude Include="200_numIslands.h" />
     <ClInclude Include="206_reverseList.h" />
     <ClInclude Include="2_addTwoNumbers.h" />
-    <ClInclude Include="300_lengthOfLIS.h" />
     <ClInclude Include="322_coinChange.h" />
+    <ClInclude Include="365_canMeasureWater.h" />
     <ClInclude Include="407_trapRainWater.h" />
     <ClInclude Include="438_findAnagrams.h" />
     <ClInclude Include="473_ makesquare.h" />
     <ClInclude Include="5179_balanceBST.h" />
+    <ClInclude Include="5348_findTheDistanceValue.h" />
+    <ClInclude Include="5349_maxNumberOfFamilies.h" />
+    <ClInclude Include="5350_getKth.h" />
+    <ClInclude Include="5351_maxSizeSlices.h" />
     <ClInclude Include="5352_generateTheString.h" />
     <ClInclude Include="5353_numTimesAllBlue.h" />
     <ClInclude Include="5356_luckyNumbers.h" />
     <ClInclude Include="5357_CustomStack.h" />
+    <ClInclude Include="5364_createTargetArray.h" />
     <ClInclude Include="53_maxSubArray.h" />
     <ClInclude Include="543_diameterOfBinaryTree.h" />
     <ClInclude Include="57_II_findContinuousSequence.h" />
     <ClInclude Include="59_II_MaxQueue.h" />
-    <ClInclude Include="64_minPathSum.h" />
     <ClInclude Include="695_maxAreaOfIsland.h" />
-    <ClInclude Include="70_climbStairs.h" />
     <ClInclude Include="76_7_minWindow.h" />
     <ClInclude Include="7_187_findRepeatedDnaSequences.h" />
     <ClInclude Include="7_290_wordPattern.h" />
     <ClInclude Include="7_3_lengthOfLongestSubstring.h" />
-    <ClInclude Include="7_409_longestPalindrome.h" />
+    <ClInclude Include="409_longestPalindrome.h" />
     <ClInclude Include="7_49_groupAnagrams.h" />
     <ClInclude Include="836_isRectangleOverlap.h" />
+    <ClInclude Include="876_middleNode.h" />
+    <ClInclude Include="892_surfaceArea.h" />
+    <ClInclude Include="945_minIncrementForUnique.h" />
     <ClInclude Include="994_orangesRotting.h" />
     <ClInclude Include="canFinish.h" />
     <ClInclude Include="canJump.h" />
@@ -132,6 +137,10 @@
     <ClInclude Include="copyRandomList.h" />
     <ClInclude Include="countSmaller.h" />
     <ClInclude Include="detectCycle.h" />
+    <ClInclude Include="DP\174_calculateMinimumHP.h" />
+    <ClInclude Include="DP\300_lengthOfLIS.h" />
+    <ClInclude Include="DP\64_minPathSum.h" />
+    <ClInclude Include="DP\70_climbStairs.h" />
     <ClInclude Include="findContentChildren.h" />
     <ClInclude Include="FindKthLagest.h" />
     <ClInclude Include="findMinArrowShots.h" />
@@ -149,6 +158,8 @@
     <ClInclude Include="mergeTwoLists.h" />
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="MinStack.h" />
+    <ClInclude Include="mst17.16_massage.h" />
+    <ClInclude Include="mst40_getLeastNumbers.h" />
     <ClInclude Include="MyQueue.h" />
     <ClInclude Include="MyStack.h" />
     <ClInclude Include="partition.h" />
@@ -172,6 +183,9 @@
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,7 @@
 #include <string>
 using namespace std;
 
+//视频里的方法
 class Solution {
 public:
 	int longestPalindrome(string s) {
@@ -25,5 +26,33 @@ public:
 			}
 		}
 		return max_length + flag;
+	}
+};
+
+//我的方法 所有的偶加上奇-1,最后有奇则再加1
+//其实和上面的代码一样
+class Solution {
+public:
+	int longestPalindrome(string s) {
+		int cmap[128] = {0};
+		for (int i = 0; i < s.size();i++)
+		{
+			cmap[s[i]]++;
+		}
+		int maxlen = 0;
+		int Odd_flag = 0;
+		for (int i = 0; i < 128;i++)
+		{
+			if (cmap[i]%2==1)//如果未奇数，则取其偶数部分
+			{
+				maxlen += cmap[i] - 1;
+				Odd_flag = 1;
+			}
+			else
+			{
+				maxlen += cmap[i];
+			}
+		}
+		return maxlen + Odd_flag;//如果中间遇到过奇数，那么要加1
 	}
 };

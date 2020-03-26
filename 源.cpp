@@ -5,7 +5,7 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "64_minPathSum.h"
+#include "365_canMeasureWater.h"
 using namespace std;
 
 //struct listnode
@@ -47,20 +47,31 @@ using namespace std;
 
 int main()
 {
-	Solution solve;
+	cout << INT_MAX << endl;
+	/*Solution solve;
+	cout<<solve.canMeasureWater(3,5,4)<<endl;*/
+	//char* p;
+	//int* q;
+	//cout << sizeof(p);
+	//cout << sizeof(q);
+	//cout << endl;
+	//cout << INT_MAX<<endl;
+	//unsigned int a = ~0;
+	//cout << a;
+	//Solution solve;
 	//vector<int> vec1 = { 2 };
 	//vector<int> vec2 = { 3,4 };
 	//vector<int> vec3 = { 6,5,7 };
 	//vector<int> vec4 = { 4,1,8,3 };
-	vector<int> vec1 = { 1,3,1 };
-	vector<int> vec2 = { 1,5,1};
-	vector<int> vec3 = { 4,2,1};
-	vector<vector<int>> imap;
-	imap.push_back(vec1);
-	imap.push_back(vec2);
-	imap.push_back(vec3);
+	//vector<int> vec1 = { 1,3,1 };
+	//vector<int> vec2 = { 1,5,1};
+	//vector<int> vec3 = { 4,2,1};
+	//vector<vector<int>> imap;
+	//imap.push_back(vec1);
+	//imap.push_back(vec2);
+	//imap.push_back(vec3);
 	//imap.push_back(vec4);
-	cout << solve.minPathSum(imap);
+	//cout << solve.minPathSum(imap);
 	//cout << endl << solve.gcdOfStrings(str1,str2);
 	//priority_queue<Qitem, vector<Qitem>, cmp> Q;
 	//Q.push(Qitem(1, 2, 1));

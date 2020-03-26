@@ -137,9 +137,6 @@
     <ClInclude Include="2_addTwoNumbers.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7_409_longestPalindrome.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="7_290_wordPattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -224,16 +221,10 @@
     <ClInclude Include="169_majorityElement.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="70_climbStairs.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="198_rob.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="53_maxSubArray.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="300_lengthOfLIS.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="5356_luckyNumbers.h">
@@ -257,21 +248,66 @@
     <ClInclude Include="1160_countCharacters.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="64_minPathSum.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="treeNode.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="174_calculateMinimumHP.h">
+    <ClInclude Include="836_isRectangleOverlap.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="836_isRectangleOverlap.h">
+    <ClInclude Include="DP\64_minPathSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\70_climbStairs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\174_calculateMinimumHP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\300_lengthOfLIS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="409_longestPalindrome.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mst40_getLeastNumbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="365_canMeasureWater.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5348_findTheDistanceValue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5349_maxNumberOfFamilies.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5350_getKth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5351_maxSizeSlices.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5364_createTargetArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="945_minIncrementForUnique.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="876_middleNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mst17.16_massage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="892_surfaceArea.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
   </ItemGroup>
 </Project>
