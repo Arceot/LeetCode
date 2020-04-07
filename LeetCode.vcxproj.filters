@@ -15,171 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MinStack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyQueue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyStack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="IsStackPoped.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="SimpleCalculate.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="FindKthLagest.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MedianFinder.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ReverseList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="reverseBetween.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="getIntersectionNode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="hasCycle.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="detectCycle.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="partition.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="copyRandomList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="mergeTwoLists.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="mergeKLists.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="findContentChildren.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="wiggleMaxLength.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="removeKdigits.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="canJump.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="jump.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="findMinArrowShots.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="minRefuelStops.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="subsets.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="subsetsWithDup.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="combinationSum2.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="generateParenthesis.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="solveNQueens.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="countSmaller.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="pathSum.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="lowestCommonAncestor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="flatten.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="rightSideView.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="canFinish.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="searchInsert.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="searchRange.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="search.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Codec.h">
+    <ClInclude Include="01.06_compressString.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="2_addTwoNumbers.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="7_290_wordPattern.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="7_49_groupAnagrams.h">
+    <ClInclude Include="05_replaceSpace.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="7_3_lengthOfLongestSubstring.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="7_49_groupAnagrams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="7_187_findRepeatedDnaSequences.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="smallerNumbersThanCurrent.h">
+    <ClInclude Include="7_290_wordPattern.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="rankTeams.h">
+    <ClInclude Include="8_myAtoi.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="isSubPath.h">
+    <ClInclude Include="42_trap.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="76_7_minWindow.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="206_reverseList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="merge.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="438_findAnagrams.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="200_numIslands.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="994_orangesRotting.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="1103_distributeCandies.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="127_ladderLength.h">
+    <ClInclude Include="53_maxSubArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="57_II_findContinuousSequence.h">
@@ -188,34 +51,16 @@
     <ClInclude Include="59_II_MaxQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="5352_generateTheString.h">
+    <ClInclude Include="76_7_minWindow.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="5353_numTimesAllBlue.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="322_coinChange.h">
+    <ClInclude Include="120_minimumTotal.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="121_maxProfit.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="543_diameterOfBinaryTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="05_replaceSpace.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="473_ makesquare.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="1013_canThreePartsEqualSum.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="1071_gcdOfStrings.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="407_trapRainWater.h">
+    <ClInclude Include="127_ladderLength.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="169_majorityElement.h">
@@ -224,55 +69,82 @@
     <ClInclude Include="198_rob.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="53_maxSubArray.h">
+    <ClInclude Include="200_numIslands.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="5356_luckyNumbers.h">
+    <ClInclude Include="206_reverseList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="5357_CustomStack.h">
+    <ClInclude Include="289_gameOfLife.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="5179_balanceBST.h">
+    <ClInclude Include="322_coinChange.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="695_maxAreaOfIsland.h">
+    <ClInclude Include="365_canMeasureWater.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="01.06_compressString.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="120_minimumTotal.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="1160_countCharacters.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="treeNode.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="836_isRectangleOverlap.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DP\64_minPathSum.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DP\70_climbStairs.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DP\174_calculateMinimumHP.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="DP\300_lengthOfLIS.h">
+    <ClInclude Include="407_trapRainWater.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="409_longestPalindrome.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="mst40_getLeastNumbers.h">
+    <ClInclude Include="438_findAnagrams.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="365_canMeasureWater.h">
+    <ClInclude Include="473_ makesquare.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="543_diameterOfBinaryTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="695_maxAreaOfIsland.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="820_minimumLengthEncoding.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="836_isRectangleOverlap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="876_middleNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="892_surfaceArea.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="912_sortArray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="914_hasGroupsSizeX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="945_minIncrementForUnique.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="994_orangesRotting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="999_numRookCaptures.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1013_canThreePartsEqualSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1071_gcdOfStrings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1103_distributeCandies.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1160_countCharacters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1162_maxDistance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5179_balanceBST.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="5348_findTheDistanceValue.h">
@@ -287,27 +159,199 @@
     <ClInclude Include="5351_maxSizeSlices.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="5352_generateTheString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5353_numTimesAllBlue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5356_luckyNumbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5357_CustomStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="5364_createTargetArray.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="945_minIncrementForUnique.h">
+    <ClInclude Include="5368_findLucky.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="876_middleNode.h">
+    <ClInclude Include="5369_numTeams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5370_UndergroundSystem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="canFinish.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="canJump.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="combinationSum2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="copyRandomList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="countSmaller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="detectCycle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="findContentChildren.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FindKthLagest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="findMinArrowShots.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="flatten.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="generateParenthesis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="getIntersectionNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hasCycle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsStackPoped.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="isSubPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jump.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lowestCommonAncestor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MedianFinder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="merge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeKLists.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mergeTwoLists.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="minRefuelStops.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MinStack.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mst17.16_massage.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="892_surfaceArea.h">
+    <ClInclude Include="mst40_getLeastNumbers.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mst62_lastRemaining.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="partition.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pathSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rankTeams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="removeKdigits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reverseBetween.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReverseList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="rightSideView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchInsert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchRange.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleCalculate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="smallerNumbersThanCurrent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solveNQueens.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="subsets.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="subsetsWithDup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="treeNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wiggleMaxLength.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\64_minPathSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\70_climbStairs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\174_calculateMinimumHP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DP\300_lengthOfLIS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5377_numSteps.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="5195_longestDiverseString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mst01.07_rotate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="1403_5376_minSubsequence.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
+    <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="readme.txt" />
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

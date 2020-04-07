@@ -5,7 +5,8 @@
 #include <vector>
 #include <queue>
 #include <cstdio>
-#include "365_canMeasureWater.h"
+#include <string>
+#include "5195_longestDiverseString.h"
 using namespace std;
 
 //struct listnode
@@ -47,7 +48,54 @@ using namespace std;
 
 int main()
 {
-	cout << INT_MAX << endl;
+	Solution solve;
+	cout << solve.longestDiverseString(1,1,7) << endl;
+	
+	//cout << INT_MAX << endl;
+	//Solution solve;
+	//vector<int> vec;
+	//vec.push_back(5);
+	//vec.push_back(4);
+	//vec.push_back(3);
+	//vec.push_back(2);
+	//vec.push_back(1);
+	//for (auto it : vec)
+	//{
+	//	cout << it << " ";
+	//}
+	//cout << endl;
+	//vector<int> ret;
+	//ret = solve.sortArray(vec);
+	//cout << ret.size() << endl;
+	//for (auto it : ret)
+	//{
+	//	cout << it << " ";
+	//}
+	//cout << endl;
+	//vector<int> left;
+	//vector<int> right;
+	//int len = vec.size();
+	//int mid = len / 2;
+	//left.assign(vec.begin(), vec.begin() + mid);
+	//right.assign(vec.begin()+mid,vec.end());
+	//for (auto it : left)
+	//{
+	//	cout << it << " ";
+	//}
+	//cout << endl;
+	//for (auto it : right)
+	//{
+	//	cout << it << " ";
+	//}
+	//cout << endl;
+	//string str1 = "time";
+	//string str2 = "me";
+	//string str3 = "bell";
+	//vector<string> vec;
+	//vec.push_back(str1);
+	//vec.push_back(str2);
+	//vec.push_back(str3);
+	//cout << INT_MAX << endl;
 	/*Solution solve;
 	cout<<solve.canMeasureWater(3,5,4)<<endl;*/
 	//char* p;

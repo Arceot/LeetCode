@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DFDF9412-4704-4C30-9279-3E8EBD7B79CF}</ProjectGuid>
+    <ProjectGuid>{BF9CAB2E-7730-42DE-B7D5-B5AAC723C6C1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LeetCode</RootNamespace>
   </PropertyGroup>
@@ -52,16 +52,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <SDLCheck>true</SDLCheck>
-      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
-    <Bscmake>
-      <PreserveSbr>true</PreserveSbr>
-    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -72,7 +67,6 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,15 +76,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="01.06_compressString.h" />
     <ClInclude Include="05_replaceSpace.h" />
     <ClInclude Include="1013_canThreePartsEqualSum.h" />
     <ClInclude Include="1071_gcdOfStrings.h" />
     <ClInclude Include="1103_distributeCandies.h" />
     <ClInclude Include="1160_countCharacters.h" />
+    <ClInclude Include="1162_maxDistance.h" />
     <ClInclude Include="120_minimumTotal.h" />
     <ClInclude Include="121_maxProfit.h" />
     <ClInclude Include="127_ladderLength.h" />
@@ -98,13 +90,17 @@
     <ClInclude Include="198_rob.h" />
     <ClInclude Include="200_numIslands.h" />
     <ClInclude Include="206_reverseList.h" />
+    <ClInclude Include="289_gameOfLife.h" />
     <ClInclude Include="2_addTwoNumbers.h" />
     <ClInclude Include="322_coinChange.h" />
     <ClInclude Include="365_canMeasureWater.h" />
     <ClInclude Include="407_trapRainWater.h" />
+    <ClInclude Include="409_longestPalindrome.h" />
+    <ClInclude Include="42_trap.h" />
     <ClInclude Include="438_findAnagrams.h" />
     <ClInclude Include="473_ makesquare.h" />
     <ClInclude Include="5179_balanceBST.h" />
+    <ClInclude Include="5195_longestDiverseString.h" />
     <ClInclude Include="5348_findTheDistanceValue.h" />
     <ClInclude Include="5349_maxNumberOfFamilies.h" />
     <ClInclude Include="5350_getKth.h" />
@@ -114,6 +110,11 @@
     <ClInclude Include="5356_luckyNumbers.h" />
     <ClInclude Include="5357_CustomStack.h" />
     <ClInclude Include="5364_createTargetArray.h" />
+    <ClInclude Include="5368_findLucky.h" />
+    <ClInclude Include="5369_numTeams.h" />
+    <ClInclude Include="5370_UndergroundSystem.h" />
+    <ClInclude Include="1403_5376_minSubsequence.h" />
+    <ClInclude Include="5377_numSteps.h" />
     <ClInclude Include="53_maxSubArray.h" />
     <ClInclude Include="543_diameterOfBinaryTree.h" />
     <ClInclude Include="57_II_findContinuousSequence.h" />
@@ -123,13 +124,17 @@
     <ClInclude Include="7_187_findRepeatedDnaSequences.h" />
     <ClInclude Include="7_290_wordPattern.h" />
     <ClInclude Include="7_3_lengthOfLongestSubstring.h" />
-    <ClInclude Include="409_longestPalindrome.h" />
     <ClInclude Include="7_49_groupAnagrams.h" />
+    <ClInclude Include="820_minimumLengthEncoding.h" />
     <ClInclude Include="836_isRectangleOverlap.h" />
     <ClInclude Include="876_middleNode.h" />
     <ClInclude Include="892_surfaceArea.h" />
+    <ClInclude Include="8_myAtoi.h" />
+    <ClInclude Include="912_sortArray.h" />
+    <ClInclude Include="914_hasGroupsSizeX.h" />
     <ClInclude Include="945_minIncrementForUnique.h" />
     <ClInclude Include="994_orangesRotting.h" />
+    <ClInclude Include="999_numRookCaptures.h" />
     <ClInclude Include="canFinish.h" />
     <ClInclude Include="canJump.h" />
     <ClInclude Include="Codec.h" />
@@ -158,8 +163,10 @@
     <ClInclude Include="mergeTwoLists.h" />
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="MinStack.h" />
+    <ClInclude Include="mst01.07_rotate.h" />
     <ClInclude Include="mst17.16_massage.h" />
     <ClInclude Include="mst40_getLeastNumbers.h" />
+    <ClInclude Include="mst62_lastRemaining.h" />
     <ClInclude Include="MyQueue.h" />
     <ClInclude Include="MyStack.h" />
     <ClInclude Include="partition.h" />
@@ -181,11 +188,10 @@
     <ClInclude Include="wiggleMaxLength.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ClassDiagram1.cd" />
+    <Text Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="readme.txt" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
